@@ -1,6 +1,8 @@
 # Scrabble Word Finder
 
-Scrabble Word Finder is a Python application that helps users find the **longest possible valid words** from a given set of letters in a specified language, similar to a Scrabble word lookup. It includes a Flask RESTful API and a Streamlit user interface.
+Scrabble Word Finder is a Python application that helps users find the **longest possible valid words** from a given set
+of letters in a specified language, similar to a Scrabble word lookup. It includes a Flask RESTful API and a Streamlit
+user interface.
 
 **Features:**
 
@@ -28,20 +30,20 @@ Scrabble Word Finder is a Python application that helps users find the **longest
 
 2. **Set Up Environment Variables:**
 
-- **Using a .env File:** Replace your-openai-api-key with your actual OpenAI API key.
+- Replace your-openai-api-key with your actual OpenAI API key in the *.env* file.
 
   ```bash
   OPENAI_API_KEY=your-openai-api-key
   FLASK_HOST=0.0.0.0
   FLASK_PORT=8888
   LOG_LEVEL=INFO
-  
-3. **Run the Flask API:**
 
-- The API will start and listen on http://0.0.0.0:8888
+3. **Run the Flask API:**
 
    ```bash
    python app.py
+
+- The API will start and listen on http://0.0.0.0:8888
 
 4. **Run the Streamlit Interface:**
 
@@ -49,6 +51,10 @@ Scrabble Word Finder is a Python application that helps users find the **longest
 
    ```bash
    streamlit run streamlit_app.py
+
+- A web browser will open automatically, displaying the Streamlit application.
+- If the browser does not open automatically, you can manually navigate to the URL provided in the terminal (
+  usually http://localhost:8501).
 
 5. **Running Tests:**
 
